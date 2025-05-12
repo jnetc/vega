@@ -1,0 +1,72 @@
+/* Text links */
+.link {
+  position: relative;
+  text-underline-offset: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  text-underline-offset: 5px;
+}
+
+.link.disabled {
+  color: var(--grey-300);
+  pointer-events: none;
+}
+
+.link-blue {
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: underline var(--link-color);
+}
+.link-blue:hover {
+  text-decoration: underline transparent;
+}
+
+.link-grey {
+  color: var(--grey-500);
+  text-decoration: underline transparent;
+}
+
+.link-grey:hover {
+  text-decoration: underline var(--grey-500);
+}
+.link-grey.active {
+  font-weight: bold;
+  text-decoration: underline var(--grey-500);
+}
+
+.link-black {
+  color: var(--black);
+  text-decoration: underline transparent;
+}
+.link-black:hover {
+  text-decoration: underline var(--link-color);
+}
+
+/* Only for marketplace links */
+[href*='marketplace'].link-grey:hover {
+  text-decoration: underline var(--link-color);
+}
+
+.link-with-icon {
+  inline-size: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap-8);
+  padding: var(--gap-8) var(--gap-16);
+  background-color: var(--surface);
+  border: 1px solid var(--grey-500);
+  border-radius: var(--border-corner-6);
+  color: var(--grey-500);
+  font-size: var(--font-16);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+
+  & .icon {
+    inline-size: var(--size-28);
+    block-size: var(--size-28);
+    fill: var(--grey-500);
+  }
+}

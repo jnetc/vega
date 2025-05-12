@@ -1,0 +1,47 @@
+.feedback__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 450px));
+  column-gap: var(--gap-32);
+}
+
+.feedback__item {
+  display: grid;
+  grid-template-rows: max-content 1fr min-content;
+  padding: var(--gap-32);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-20);
+
+  & :where(article, blockquote) {
+    display: contents;
+  }
+
+  & h3 {
+    font-size: var(--font-32);
+    padding-block-end: var(--gap-24);
+  }
+  & footer {
+    margin-block-end: auto;
+    padding-block-start: var(--gap-24);
+
+    & cite {
+      display: inline-block;
+      position: relative;
+      font-size: var(--font-22);
+      font-style: normal;
+      font-family: FunnelDisplay-Light, sans-serif;
+      text-indent: 1.75rem;
+
+      &::before {
+        content: '—';
+        position: absolute;
+        left: -1.75rem;
+        color: var(--black);
+      }
+    }
+
+    & p {
+      font-size: var(--font-16);
+    }
+  }
+}

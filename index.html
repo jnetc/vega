@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+	<meta name="robots" content="index, follow" />
+	<!-- Open Graph -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://vega.ai/" />
+	<meta property="og:type" content="website" />
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image" content="" />
+	<!-- Canonical -->
+	<link rel="canonical" href="https://vega.ai/" lang="en" />
+	<!-- Preload for critical styles and fonts -->
+	<style data-style="fonts">
+		@font-face {
+			font-family: 'FunnelDisplay-Bold';
+			src: url('./public/fonts/FunnelDisplay-Bold.woff2') format('woff2');
+			font-weight: bold;
+			font-style: normal;
+			font-display: swap;
+			size-adjust: none;
+		}
+
+		@font-face {
+			font-family: 'FunnelDisplay-Light';
+			src: url('./public/fonts/FunnelDisplay-Light.woff2') format('woff2');
+			font-weight: 300;
+			font-style: normal;
+			font-display: swap;
+			size-adjust: none;
+		}
+	</style>
+	<link rel="stylesheet" href="./styles/global.css">
+	<!-- Main styles -->
+	<link rel="stylesheet" href="./styles/variable.css" />
+	<link rel="stylesheet" href="./styles/sections/hero.css" />
+	<link rel="stylesheet" href="./styles/sections/team.css" />
+	<link rel="stylesheet" href="./styles/sections/about-us.css" />
+	<!-- Google tag (gtag.js) -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JYKZFDLRK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7JYKZFDLRK');
+  </script> -->
+	<!-- Scripts with defer -->
+	<!-- <script src="../scripts/global.js" defer></script> -->
+	<!-- <script src="../scripts/site/index/index.js" defer></script> -->
+	<!-- <script src="../scripts/dialogs/dialog.js" defer></script> -->
+	<!-- <script src="../scripts/cookie/cookie.js" defer></script> -->
+
+	<title></title>
+	<meta name="description" content="" />
+	<script type="application/ld+json">
+
+	</script>
+	<!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Write some regex inside match() to check for cookies.
+
+      const cookie = document.cookie.match("auth_token");
+
+      const heroProfile = document.getElementById('profile');
+      const heroLogin = document.getElementById('login');
+
+      if (cookie) {
+        heroProfile.style.display = 'grid';
+      } else {
+        heroLogin.style.display = 'grid';
+      }
+    });
+  </script> -->
+</head>
+
+<body id="top" class="landing">
+	<header class="header">
+		<div class="header__left-side">
+			<button type="button" id="header__open-mob-menu" class="btn-circle-48" aria-label="open menu">
+				<svg class="icon" aria-hidden="true">
+					<use href="../public/svg/icons/ui_main_set.svg#menu"></use>
+				</svg>
+			</button>
+			<a href="./" title="VEGA BI home page" class="header__logo">
+				<img src="./public/imgs/logo.png" width="101" height="30" class="logo" alt="VEGA BI" title="VEGA BI" />
+			</a>
+		</div>
+		<nav class="header__center header__nav" aria-label="Main navigation">
+			<div class="nav__mob-header">
+				<button type="button" id="header__close-mob-menu" class="btn-circle-48 btn-black" aria-label="close menu">
+					<svg class="icon" aria-hidden="true">
+						<use href="../public/svg/icons/ui_main_set.svg#close"></use>
+					</svg>
+				</button>
+			</div>
+			<ul class="nav__links">
+				<li><a href="#overview" class="link link-grey">Overview</a></li>
+				<li><a href="#features" class="link link-grey">Features</a></li>
+				<li><a href="./pricing/companies.html" class="link link-grey">Pricing</a></li>
+				<li><a href="#faq" class="link link-grey">FAQ</a></li>
+				<li><a href="./support.html" class="link link-grey">Support</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="landing__main">
+		<section id="hero">
+			<h1>/ Eiffels.<span>AI</span></h1>
+			<h1><span class="wa-color">WhatsApp</span> your Construction with <span class="p-color">AI</span></h1>
+			<p>
+				<strong>Eiffels AI</strong> integrates directly with WhatsApp, transforming construction management with simple,
+				powerful AI automation.
+			</p>
+			<a href="./profile/" id="profile" class="btn btn-56 btn-p login__btn" aria-label="Access in Eiffels AI"
+				style="display: none;">
+				<span>Go to profile</span>
+				<svg class="icon" aria-hidden="true">
+					<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
+				</svg>
+			</a>
+			<div class="official-partners" aria-labelledby="partners-title">
+				<span>Trusted by leaders like Meta and Microsoft</span>
+				<img src="./public/svg/logos/meta_com.svg" width="92" height="19" alt="Meta official partner" />
+				<img src="./public/svg/logos/microsoft_com.svg" width="115" height="19" alt="Microsoft official partner" />
+				<span style="display: none;">
+					Encrypted with
+					<a href="https://letsencrypt.org/" class="link link-blue" target="_blank" rel="noopener noreferrer">
+						Blockchain Technology
+					</a>
+				</span>
+			</div>
+		</section>
+		<section id="overview">
+			<h2 class="section__title">Is it real? <span class="p-color">Yes, it is!</span></h2>
+			<p class="section__description">
+				Like many in the construction industry, you probably use <b class="wa-color">WhatsApp</b> daily. It’s
+				convenient, but it wasn’t built with industry needs in mind. That's where Eiffels AI comes in—transforming your
+				favorite messaging app into a powerful tool that simplifies tasks and boosts productivity through AI. From
+				generating daily reports to securing approvals, all within the chat interface you already know and love, Eiffels
+				AI is set to revolutionize how you work.
+			</p>
+		</section>
+		<section id="partners">
+			<h2 class="partners__title">StartUp Partners</h2>
+			<div class="partners__logos">
+				<a href="https://slush.org/" target="_blank" rel="noopener noreferrer" aria-label="Slush Startup partner">
+					<img src="./public/svg/logos/node_by_slush.svg" width="164" height="64" alt="node by slush logo">
+				</a>
+				<a href="https://www.microsoft.com/en-us/startups/" target="_blank" rel="noopener noreferrer"
+					aria-label="Microsoft Startup partner">
+					<img src="./public/svg/logos/founders_hub.svg" width="164" height="64" alt="founders hub logo">
+				</a>
+				<a href="https://kirahub.org/" target="_blank" rel="noopener noreferrer" aria-label="KiraHub Startup partner">
+					<img src="./public/svg/logos/kirahub.png" width="164" height="64" alt="kirahub logo">
+				</a>
+				<a href="https://www.businessfinland.fi/en/for-finnish-customers/home" target="_blank" rel="noopener noreferrer"
+					aria-label="Business Finland partner">
+					<img src="./public/svg/logos/business_fi.svg" width="164" height="64" alt="business finland logo">
+				</a>
+				<a href="https://maria.io/" target="_blank" rel="noopener noreferrer" aria-label="Maria Startup partner">
+					<img src="./public/svg/logos/maria_01.svg" width="164" height="64" alt="Maria 01, Startup Campus logo">
+				</a>
+			</div>
+		</section>
+		<section id="features">
+			<h2 class="section__title">Features that Increase Efficiency <span class="p-color">Timely</span> Workflow</h2>
+			<p class="section__description">
+				Eiffels AI transcends traditional apps with its swift, no-install integration directly into WhatsApp,
+				streamlining construction management. This transformative AI solution delves deep into industry workflows,
+				simplifying and automating processes without the complexities of typical software setups.
+			</p>
+			<div class="features__partners">
+				<a href="https://www.ukko.fi/eiffels/" target="_blank" rel="noopener noreferrer"
+					aria-label="move to ukko.fi website" title="move to ukko.fi website">
+					<img src="../public/svg/logos/ukko_fi.svg" width="164" height="32" alt="ukko logo" />
+				</a>
+				<a href="https://www.movenium.fi/" target="_blank" rel="noopener noreferrer"
+					aria-label="move to movenium.fi website" title="move to movenium.fi website">
+					<img src="../public/svg/logos/movenium_logo.svg" width="164" height="32" alt="movenium logo" />
+				</a>
+			</div>
+
+			<article id="ai-daily-reports" class="feature__item">
+
+				<div class="feature__content">
+					<h3 class="feature__title">AI Daily Reports</h3>
+					<ul class="feature__description">
+						<li>
+
+							Automatically generate comprehensive daily reports using voice, image or text
+							inputs. Eiffels AI captures essential data, organizes it, and prepares polished reports ready for
+							submission and approval.
+						</li>
+						<li>
+
+							Log activities and materials on-the-go.
+						</li>
+						<li>
+
+							Send reports directly to managers for fast approval from WhatsApp to WhatsApp.
+						</li>
+					</ul>
+				</div>
+			</article>
+
+			<article id="blockchain-secured-approvals" class="feature__item">
+
+				<div class="feature__content">
+					<h3 class="feature__title">Blockchain Secured Approvals</h3>
+					<ul class="feature__description">
+						<li>
+
+							Ensure the integrity of your documents with blockchain technology. Every approval is traceable and
+							tamper-proof, providing peace of mind and reliability.
+						</li>
+						<li>
+
+							Secure your data with blockchain's immutable ledger.
+						</li>
+						<li>
+
+							Speed up the approval process without compromising security.
+						</li>
+					</ul>
+				</div>
+			</article>
+
+			<article id="ai-powered-translations" class="feature__item">
+
+				<div class="feature__content">
+					<h3 class="feature__title">AI-Powered Translations</h3>
+					<ul class="feature__description">
+						<li>
+
+							Communicate effectively in multiple languages within your diverse team.
+							Get real-time, accurate translations to keep everyone on the same page.
+						</li>
+						<li>
+
+							Translate documents and messages instantly using your voice.
+						</li>
+						<li>
+
+							Facilitate smoother communication across global teams.
+						</li>
+					</ul>
+				</div>
+			</article>
+
+			<article id="smart-invoicing" class="feature__item">
+
+				<div class="feature__content">
+					<h3 class="feature__title p-color"><span class="p-color">Smart</span> Invoicing</h3>
+					<ul class="feature__description">
+						<li>
+
+							Generate and track invoices directly through WhatsApp with UKKO.fi integration.
+							Reduce manual entry and focus more on your project tasks.
+						</li>
+						<li>
+
+							Streamline payment processes with automated solutions.
+						</li>
+						<li>
+
+							Keep track of payments and financial status effortlessly.
+						</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+
+		<section id="team" class="grid">
+			<h2>/ <span>our</span> team</h2>
+			<ul class="faq__list">
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>How do I get started with Eiffels AI?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							To get started, simply <a href="#top" class="link link-blue">sign up</a> on our website or directly
+							through WhatsApp scanning the QR code. Once
+							registered, you can immediately begin using the features available in your chosen package.
+						</p>
+						<img src="../public/qr-code/QR-code_whatsapp.svg" width="128" height="128" alt="qr code for whatsapp">
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>Is there a free trial available for Eiffels AI?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							Yes, we offer a 30-day <b>FREE</b> trial for new users! No payment details required! This allows you to
+							explore all the features of Eiffels AI and see how it can benefit your construction management processes
+							before making a financial commitment.
+						</p>
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>How does Eiffels AI ensure the security of my data?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							Eiffels AI uses blockchain technology to secure approvals and transactions, ensuring that all your data is
+							immutable, traceable, and protected from tampering. Additionally, Meta's WhatsApp is entirely encrypted,
+							and all data transmitted via WhatsApp cannot be accessed by Eiffels AI or Meta. It is 100% secure and
+							encrypted, adhering to the highest standards of data protection globally.
+						</p>
+						<a href="https://eiffels.ai/public/pdf/en/privacy_policy.pdf" class="btn btn-48 btn-p" target="_blank"
+							rel="noopener noreferrer">
+							<span>About Policy</span>
+							<svg class="icon" aria-hidden="true">
+								<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>Can I add more team members to my Eiffels AI subscription?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							You can add as many team members as you want by choosing the Company package and adding extra seats. With
+							the Company package, you get 3 team member seats for free. Explore our pricing options using this button:
+						</p>
+						<a href="./pricing/companies.html" class="btn btn-48 btn-p">
+							<span>Pricings</span>
+							<svg class="icon" aria-hidden="true">
+								<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
+							</svg>
+						</a>
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>Is that all, or are more features coming?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							We continuously develop and enhance Eiffels AI to meet the evolving needs of the construction industry.
+							More features, including cost management tools, receipt scanning capabilities, and enhanced customization
+							options, are currently in development and will be rolled out soon.
+						</p>
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>How do I offer my services on the AI Marketplace?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							It’s easy to offer your services on the AI Marketplace for <b>FREE</b>. Simply sign up and select "Supply
+							Your Services." Describe your service details, and voilà, you’re set to connect with potential clients!
+						</p>
+					</div>
+				</li>
+				<li class="faq__item">
+					<h3 class="faq__question" tabindex="0">
+						<span>What kind of support does Eiffels AI offer?</span>
+						<div class="faq__collapse-btn" aria-hidden="true">
+							<span class="collapse-btn"></span>
+						</div>
+					</h3>
+					<div class="faq__answer">
+						<p>
+							We offer comprehensive support through personal chat assistance, detailed help articles, and a responsive
+							customer service team to ensure you can maximize the use of Eiffels AI effectively.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- Testimonials -->
+		<section id="about-us" class="grid">
+			<h2 class="section__title">/ What <span>they say</span> about us</h2>
+			<ul class="feedback__list">
+				<li class="feedback__item">
+					<article>
+						<blockquote>
+							<h3>“I used to chase updates all day. Now they arrive before I ask.”</h3>
+							<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
+								without delays. We didn't even train the crew.</p>
+							<footer>
+								<cite>Ahmed Al-Qahtani</cite>
+								<p>Project Director, Saudi BuildTech</p>
+							</footer>
+						</blockquote>
+					</article>
+				</li>
+				<li class="feedback__item">
+					<article>
+						<blockquote>
+							<h3>“With Vega, we turned chaos into clarity. Communication is seamless and immediate.”</h3>
+							<p>The integration of tools made collaboration effortless, allowing our team to focus on what truly
+								matters — delivering
+								exceptional results.</p>
+							<footer>
+								<cite>Elina Virtanen</cite>
+								<p>Operations Manager, Nordic Infra Group</p>
+							</footer>
+						</blockquote>
+					</article>
+				</li>
+				<li class="feedback__item">
+					<article>
+						<blockquote>
+							<h3>“The efficiency we've gained with Vega is unparalleled. It’s like having an extra pair of hands.”</h3>
+							<p>We tried big-name tools. Too slow. Too complex. Vega is fast, invisible, and human — our engineers
+								report by voice in
+								WhatsApp, and I get clean, structured data.</p>
+							<footer>
+								<cite>Rami Haddad</cite>
+								<p>CEO, Horizon Developers</p>
+							</footer>
+						</blockquote>
+					</article>
+				</li>
+				<li class="feedback__item">
+					<article>
+						<blockquote>
+							<h3>I used to chase updates all day. Now they arrive before I ask.</h3>
+							<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
+								without delays. We didn't even train the crew.</p>
+							<footer>
+								<cite>Ahmed Al-Qahtani</cite>
+								<p>Project Director, Saudi BuildTech</p>
+							</footer>
+						</blockquote>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<section class="footer-top">
+			<div class="footer-top__logo footer__rows">
+				<a href="./" title="VEGA BI home page" aria-label="VEGA BI">
+					<img src="./public/imgs/logo.png" width="200" height="60" alt="VEGA BI Logo" />
+				</a>
+				<p>AI Copilots Built for Construction Teams.</p>
+			</div>
+			<address class="footer-top__address footer__rows">
+				<h3>Information</h3>
+				<a href="https://maps.app.goo.gl/3ByJddfkPFY2Eci78" class="link link-black" target="_blank"
+					rel="noopener noreferrer">
+					Otakaari 29, 00200, Espoo
+				</a>
+				<a href="mailto:info@eiffels.ai" class="link link-black" aria-label="Email support at VEGA BI">
+					info@eiffels.ai
+				</a>
+				<a href="tel:+358407371010" class="link link-black" aria-label="Get in touch with Eiffels AI support">
+					+358 40 7371010
+				</a>
+			</address>
+			<ul class="footer__rows">
+				<li>
+					<h3 class="footer-top__title">Platform</h3>
+				</li>
+				<li><a href="https://www.eiffels.ai/" class="link link-black">Eiffels AI (Daily Reports)</a></li>
+				<li><a href="https://www.s.market/" class="link link-black">S.Market (WA Marketplace)</a></li>
+			</ul>
+			<!-- <div class="footer__cols">
+				<ul class="footer__rows">
+					<li>
+						<h3 class="footer-top__title">Services & Plans</h3>
+					</li>
+					<li><a href="./pricing/companies.html" class="link link-black">Company Plans</a></li>
+					<li><a href="./pricing/individuals.html" class="link link-black">Individual Plans</a></li>
+					<li><a href="../en/marketplace/" class="link link-black">AI Marketplace</a></li>
+				</ul>
+				<ul class="footer__rows">
+					<li>
+						<h3 class="footer-top__title">Resources & Help</h3>
+					</li>
+					<li><a href="#faq" class="link link-black">FAQ</a></li>
+					<li><a href="./support.html" class="link link-black">Support</a></li>
+				</ul>
+			</div> -->
+			<div class="footer__rows">
+				<h3>Connect</h3>
+				<div class="footer-top__social-links">
+					<a href="http://#" class="btn-circle-40 btn-grey-200-border" target="_blank" rel="noopener noreferrer"
+						aria-label="Follow us on Telegram">
+						<svg class="icon" aria-hidden="true">
+							<use href="../public/svg/icons/ui_main_set.svg#telegram"></use>
+						</svg>
+					</a>
+					<a href="http://#" class="btn-circle-40 btn-grey-200-border" target="_blank" rel="noopener noreferrer"
+						aria-label="Follow us on WhatsApp">
+						<svg class="icon" aria-hidden="true">
+							<use href="../public/svg/icons/ui_main_set.svg#whatsapp"></use>
+						</svg>
+					</a>
+					<a href="http://#" class="btn-circle-40 btn-grey-200-border" target="_blank" rel="noopener noreferrer"
+						aria-label="Follow us on Instagram">
+						<svg class="icon" aria-hidden="true">
+							<use href="../public/svg/icons/ui_main_set.svg#instagram"></use>
+						</svg>
+					</a>
+					<a href="http://#" class="btn-circle-40 btn-grey-200-border" target="_blank" rel="noopener noreferrer"
+						aria-label="Follow us on TikTok">
+						<svg class="icon" aria-hidden="true">
+							<use href="../public/svg/icons/ui_main_set.svg#tik-tok"></use>
+						</svg>
+					</a>
+					<a href="http://#" class="btn-circle-40 btn-grey-200-border" target="_blank" rel="noopener noreferrer"
+						aria-label="Follow us on Facebook">
+						<svg class="icon" aria-hidden="true">
+							<use href="../public/svg/icons/ui_main_set.svg#facebook"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="footer-bottom">
+			<span id="copyright-content"></span>
+			<div class="footer-bottom__links">
+				<!-- <a href="http://#" class="link link-grey">Cookies</a> -->
+				<a href="https://eiffels.ai/public/pdf/en/terms_of_use.pdf" class="link link-grey" target="_blank"
+					rel="noopener noreferrer">Terms of Use</a>
+				<a href="https://eiffels.ai/public/pdf/en/privacy_policy.pdf" class="link link-grey" target="_blank"
+					rel="noopener noreferrer">Privacy Policy</a>
+				<a href="https://eiffels.ai/public/pdf/en/pricing_policy.pdf" class="link link-grey" target="_blank"
+					rel="noopener noreferrer">Pricing Policy</a>
+			</div>
+		</section>
+	</footer>
+	<!-- Copyright Date and Text  -->
+	<script>
+		document.getElementById("copyright-content").textContent = `${new Date().getFullYear()} © Vega Software Oy`;
+	</script>
+	<!-- Cookie window  -->
+	<div class="cookie" style="display:none" role="dialog" aria-labelledby="cookie-description">
+		<img src="../public/svg/cookie.svg" height="48" width="48" alt="cookie icon" aria-hidden="true">
+		<p id="cookie-description">We use cookies to collect data to improve your experience on our site. Read our
+			<a href="http://#" class="link link-blue">cookie policy.</a>
+		</p>
+		<div class="cookie-btns">
+			<button id="cookie-decline" class="btn btn-48 btn-p-border" aria-label="Decline cookie">Decline</button>
+			<button id="cookie-accept" class="btn btn-48 btn-p" aria-label="Accept cookie">Accept</button>
+		</div>
+	</div>
+</body>
+
+</html>
