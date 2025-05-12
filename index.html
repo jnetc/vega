@@ -83,7 +83,7 @@
   </script> -->
 </head>
 
-<body id="top" class="landing">
+<body id="top" class="vega">
 	<header class="header">
 		<div class="header__left-side">
 			<button type="button" id="header__open-mob-menu" class="btn-circle-48" aria-label="open menu">
@@ -113,8 +113,8 @@
 		</nav>
 	</header>
 
-	<main class="landing__main">
-		<section id="hero">
+	<main class="main">
+		<section id="hero" data-section="hero">
 			<h1>/ Eiffels.<span>AI</span></h1>
 			<h1><span class="wa-color">WhatsApp</span> your Construction with <span class="p-color">AI</span></h1>
 			<p>
@@ -140,7 +140,7 @@
 				</span>
 			</div>
 		</section>
-		<section id="overview">
+		<section id="overview" data-section="overview">
 			<h2 class="section__title">Is it real? <span class="p-color">Yes, it is!</span></h2>
 			<p class="section__description">
 				Like many in the construction industry, you probably use <b class="wa-color">WhatsApp</b> daily. It’s
@@ -150,7 +150,7 @@
 				AI is set to revolutionize how you work.
 			</p>
 		</section>
-		<section id="partners">
+		<section id="partners" data-section="partners">
 			<h2 class="partners__title">StartUp Partners</h2>
 			<div class="partners__logos">
 				<a href="https://slush.org/" target="_blank" rel="noopener noreferrer" aria-label="Slush Startup partner">
@@ -172,7 +172,7 @@
 				</a>
 			</div>
 		</section>
-		<section id="features">
+		<section id="features" data-section="features">
 			<h2 class="section__title">Features that Increase Efficiency <span class="p-color">Timely</span> Workflow</h2>
 			<p class="section__description">
 				Eiffels AI transcends traditional apps with its swift, no-install integration directly into WhatsApp,
@@ -280,190 +280,120 @@
 			</article>
 		</section>
 
-		<section id="team" class="grid">
-			<h2>/ <span>our</span> team</h2>
-			<ul class="faq__list">
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>How do I get started with Eiffels AI?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							To get started, simply <a href="#top" class="link link-blue">sign up</a> on our website or directly
-							through WhatsApp scanning the QR code. Once
-							registered, you can immediately begin using the features available in your chosen package.
-						</p>
-						<img src="../public/qr-code/QR-code_whatsapp.svg" width="128" height="128" alt="qr code for whatsapp">
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>Is there a free trial available for Eiffels AI?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							Yes, we offer a 30-day <b>FREE</b> trial for new users! No payment details required! This allows you to
-							explore all the features of Eiffels AI and see how it can benefit your construction management processes
-							before making a financial commitment.
-						</p>
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>How does Eiffels AI ensure the security of my data?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							Eiffels AI uses blockchain technology to secure approvals and transactions, ensuring that all your data is
-							immutable, traceable, and protected from tampering. Additionally, Meta's WhatsApp is entirely encrypted,
-							and all data transmitted via WhatsApp cannot be accessed by Eiffels AI or Meta. It is 100% secure and
-							encrypted, adhering to the highest standards of data protection globally.
-						</p>
-						<a href="https://eiffels.ai/public/pdf/en/privacy_policy.pdf" class="btn btn-48 btn-p" target="_blank"
-							rel="noopener noreferrer">
-							<span>About Policy</span>
-							<svg class="icon" aria-hidden="true">
-								<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
-							</svg>
-						</a>
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>Can I add more team members to my Eiffels AI subscription?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							You can add as many team members as you want by choosing the Company package and adding extra seats. With
-							the Company package, you get 3 team member seats for free. Explore our pricing options using this button:
-						</p>
-						<a href="./pricing/companies.html" class="btn btn-48 btn-p">
-							<span>Pricings</span>
-							<svg class="icon" aria-hidden="true">
-								<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
-							</svg>
-						</a>
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>Is that all, or are more features coming?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							We continuously develop and enhance Eiffels AI to meet the evolving needs of the construction industry.
-							More features, including cost management tools, receipt scanning capabilities, and enhanced customization
-							options, are currently in development and will be rolled out soon.
-						</p>
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>How do I offer my services on the AI Marketplace?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							It’s easy to offer your services on the AI Marketplace for <b>FREE</b>. Simply sign up and select "Supply
-							Your Services." Describe your service details, and voilà, you’re set to connect with potential clients!
-						</p>
-					</div>
-				</li>
-				<li class="faq__item">
-					<h3 class="faq__question" tabindex="0">
-						<span>What kind of support does Eiffels AI offer?</span>
-						<div class="faq__collapse-btn" aria-hidden="true">
-							<span class="collapse-btn"></span>
-						</div>
-					</h3>
-					<div class="faq__answer">
-						<p>
-							We offer comprehensive support through personal chat assistance, detailed help articles, and a responsive
-							customer service team to ensure you can maximize the use of Eiffels AI effectively.
-						</p>
-					</div>
-				</li>
-			</ul>
+		<section id="team" data-section="team">
+			<h2 class="section__title">/ <span>our</span> team</h2>
+			<div class="carousel">
+				<ul class="team__list">
+					<li class="team__member">
+						<figure>
+							<img src="./public/imgs/igor_ivanov.jpg" width="470" height="575"
+								alt="Igor Ivanov (Vega Software Oy CEO)">
+							<figcaption>
+								<h3>Igor Ivanov <br><span>CEO</span></h3>
+								<p>Director of marketing and growth strategy. Brand developer. Academic business background.</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="team__member">
+						<figure>
+							<img src="./public/imgs/violetta_suokas.jpg" width="470" height="575"
+								alt="Violetta Suokas (Vega Software Oy Product Manager)">
+							<figcaption>
+								<h3>Violetta Suokas <br><span>Product Manager</span></h3>
+								<p>Product management leader. Growth-driven strategist. Strong background in technology and business
+									innovation.</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="team__member">
+						<figure>
+							<img src="./public/imgs/anton_kappi.jpg" width="470" height="575"
+								alt="Anton Kappi (Vega Software Oy UI Arhitector)">
+							<figcaption>
+								<h3>Anton Kappi <br><span>UI Arhitector</span></h3>
+								<p>UI architect. Systematic design thinker. Expertise in scalable and user-centric digital solutions.
+								</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="team__member">
+						<figure>
+							<img src="./public/imgs/igor_ivanov.jpg" width="470" height="575"
+								alt="Igor Ivanov (Vega Software Oy CEO)">
+							<figcaption>
+								<h3>Igor Ivanov (CEO)</h3>
+								<p>Director of marketing and growth strategy. Brand developer. Academic business background.</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<!-- Testimonials -->
-		<section id="about-us" class="grid">
+		<section id="about-us" data-section="about-us">
 			<h2 class="section__title">/ What <span>they say</span> about us</h2>
-			<ul class="feedback__list">
-				<li class="feedback__item">
-					<article>
-						<blockquote>
-							<h3>“I used to chase updates all day. Now they arrive before I ask.”</h3>
-							<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
-								without delays. We didn't even train the crew.</p>
-							<footer>
-								<cite>Ahmed Al-Qahtani</cite>
-								<p>Project Director, Saudi BuildTech</p>
-							</footer>
-						</blockquote>
-					</article>
-				</li>
-				<li class="feedback__item">
-					<article>
-						<blockquote>
-							<h3>“With Vega, we turned chaos into clarity. Communication is seamless and immediate.”</h3>
-							<p>The integration of tools made collaboration effortless, allowing our team to focus on what truly
-								matters — delivering
-								exceptional results.</p>
-							<footer>
-								<cite>Elina Virtanen</cite>
-								<p>Operations Manager, Nordic Infra Group</p>
-							</footer>
-						</blockquote>
-					</article>
-				</li>
-				<li class="feedback__item">
-					<article>
-						<blockquote>
-							<h3>“The efficiency we've gained with Vega is unparalleled. It’s like having an extra pair of hands.”</h3>
-							<p>We tried big-name tools. Too slow. Too complex. Vega is fast, invisible, and human — our engineers
-								report by voice in
-								WhatsApp, and I get clean, structured data.</p>
-							<footer>
-								<cite>Rami Haddad</cite>
-								<p>CEO, Horizon Developers</p>
-							</footer>
-						</blockquote>
-					</article>
-				</li>
-				<li class="feedback__item">
-					<article>
-						<blockquote>
-							<h3>I used to chase updates all day. Now they arrive before I ask.</h3>
-							<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
-								without delays. We didn't even train the crew.</p>
-							<footer>
-								<cite>Ahmed Al-Qahtani</cite>
-								<p>Project Director, Saudi BuildTech</p>
-							</footer>
-						</blockquote>
-					</article>
-				</li>
-			</ul>
+			<div class="carousel">
+				<ul class="feedback__list">
+					<li class="feedback__item">
+						<article>
+							<blockquote>
+								<h3>“I used to chase updates all day. Now they arrive before I ask.”</h3>
+								<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
+									without delays. We didn't even train the crew.</p>
+								<footer>
+									<cite>Ahmed Al-Qahtani</cite>
+									<p>Project Director, Saudi BuildTech</p>
+								</footer>
+							</blockquote>
+						</article>
+					</li>
+					<li class="feedback__item">
+						<article>
+							<blockquote>
+								<h3>“With Vega, we turned chaos into clarity. Communication is seamless and immediate.”</h3>
+								<p>The integration of tools made collaboration effortless, allowing our team to focus on what truly
+									matters — delivering
+									exceptional results.</p>
+								<footer>
+									<cite>Elina Virtanen</cite>
+									<p>Operations Manager, Nordic Infra Group</p>
+								</footer>
+							</blockquote>
+						</article>
+					</li>
+					<li class="feedback__item">
+						<article>
+							<blockquote>
+								<h3>“The efficiency we've gained with Vega is unparalleled. It’s like having an extra pair of hands.”
+								</h3>
+								<p>We tried big-name tools. Too slow. Too complex. Vega is fast, invisible, and human — our engineers
+									report by voice in
+									WhatsApp, and I get clean, structured data.</p>
+								<footer>
+									<cite>Rami Haddad</cite>
+									<p>CEO, Horizon Developers</p>
+								</footer>
+							</blockquote>
+						</article>
+					</li>
+					<li class="feedback__item">
+						<article>
+							<blockquote>
+								<h3>I used to chase updates all day. Now they arrive before I ask.</h3>
+								<p>Vega's WhatsApp-native interface felt familiar from day one. Reports, check-ins, materials — all flow
+									without delays. We didn't even train the crew.</p>
+								<footer>
+									<cite>Ahmed Al-Qahtani</cite>
+									<p>Project Director, Saudi BuildTech</p>
+								</footer>
+							</blockquote>
+						</article>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		<section class="footer-top">
 			<div class="footer-top__logo footer__rows">
 				<a href="./" title="VEGA BI home page" aria-label="VEGA BI">

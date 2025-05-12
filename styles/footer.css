@@ -7,14 +7,17 @@ body > footer {
 
   & h3 {
     padding-block-end: var(--gap-8);
-    color: var(--grey-400);
+    color: var(--black);
     font-size: var(--font-20);
+    text-transform: uppercase;
+    font-family: FunnelDisplay-Light, sans-serif;
+    font-weight: 300;
   }
 }
 
 .footer-top {
-  display: grid;
-  grid-template-columns: 1fr repeat(3, max-content);
+  display: flex;
+  flex-wrap: wrap;
   column-gap: var(--gap-64);
   row-gap: var(--gap-36);
   padding-block: var(--gap-48);
@@ -22,6 +25,14 @@ body > footer {
 
   & a {
     font-size: var(--font-15);
+    color: var(--grey-400);
+    font-weight: 300;
+  }
+  & p {
+    color: var(--black);
+  }
+  & :first-child {
+    margin-inline-end: auto;
   }
 }
 

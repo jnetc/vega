@@ -1,0 +1,59 @@
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-block-end: var(--gap-8);
+}
+
+.team__list {
+  min-inline-size: max-content;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  column-gap: var(--gap-32);
+}
+
+.team__member {
+  inline-size: clamp(320px, 80vw, 450px);
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  row-gap: var(--gap-16);
+  scroll-snap-align: start;
+
+  & img {
+    height: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: cover;
+
+    border-radius: var(--radius-20);
+  }
+
+  & figure {
+    display: contents;
+  }
+
+  & figcaption {
+    padding: var(--gap-32);
+    border: 1px solid var(--grey-200);
+    border-radius: var(--radius-20);
+  }
+
+  & h3 {
+    font-size: clamp(var(--font-24), 3.8vw, var(--font-32));
+    padding-block-end: var(--gap-24);
+  }
+  & span {
+    display: inline-block;
+    position: relative;
+    font-size: clamp(var(--font-18), 2.8vw, var(--font-22));
+    font-style: normal;
+    font-family: FunnelDisplay-Light, sans-serif;
+    text-indent: 1.75rem;
+
+    &::before {
+      content: '—';
+      position: absolute;
+      left: -1.75rem;
+      color: var(--black);
+    }
+  }
+}

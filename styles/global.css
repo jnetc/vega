@@ -32,21 +32,26 @@ html {
 }
 
 body {
-  --colums: 12;
-  --colums-width: var(--size-96);
-  --gap: var(--gap-36);
   --outside: auto;
-  --min-grid-size: calc(var(--colums) * var(--colums-width) + (var(--colums) - 1) * var(--gap));
+  --body-size: 90rem;
 
   accent-color: var(--primary);
   min-block-size: 100dvh;
+  display: grid;
+  grid-template-columns: var(--outside) minmax(320px, var(--body-size)) var(--outside);
+  grid-template-rows: min-content;
   position: relative;
+  margin-inline: auto;
   overflow-y: auto;
   color: var(--grey-900);
   background-color: var(--grey-50);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   text-rendering: optimizeSpeed;
   scrollbar-gutter: stable;
+
+  @media screen and (width <= 100rem) {
+    --outside: clamp(var(--gap-20), 6vw, var(--gap-128));
+  }
 }
 
 input,
@@ -95,7 +100,7 @@ h6 {
 p {
   color: var(--grey-400);
   line-height: 1.4;
-  font-size: var(--font-22);
+  font-size: clamp(var(--font-18), 2.8vw, var(--font-22));
   font-weight: 300;
 
   &:has(strong) strong {
@@ -113,14 +118,6 @@ figcaption {
   text-wrap: pretty;
   /* max-inline-size: 75ch; */
 }
-
-/* p,
-label,
-li,
-time {
-  color: var(--grey-500);
-  font-size: var(--font-18);
-} */
 
 /* Margin top to make gap as 80px down */
 :target {
@@ -161,18 +158,40 @@ strong {
   color: var(--grey-500);
 }
 
-/* blockquote {
-  hanging-punctuation: first last;
-} */
+:where(.header, .footer),
+[data-section]:has(:not(.carousel)),
+[data-section]:has(.carousel) {
+  grid-column: 2;
+}
 
-.main {
+[data-section] {
+  padding-block-end: var(--gap-224);
+}
+
+[data-section]:has(.carousel) {
+  grid-column: 2;
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  /* column-gap: var(--gap-20); */
+  grid-template-columns: subgrid;
 
-  & > * {
+  & h2 {
     grid-column: 2;
   }
+
+  & .carousel {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (width <= 100rem) {
+    grid-column: 1 / -1;
+
+    & .carousel {
+      padding-inline: clamp(var(--gap-20), 6vw, 96px);
+      scroll-padding-inline: clamp(var(--gap-20), 6vw, 96px);
+    }
+  }
+}
+.main {
+  display: contents;
 }
 
 svg[class*='icon'] {
@@ -181,14 +200,7 @@ svg[class*='icon'] {
 }
 
 h2.section__title {
-  font-size: clamp(var(--font-32), 6.5vw, var(--font-56));
-  text-transform: uppercase;
   padding-block-end: var(--gap-96);
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 959px) {
-  :root {
-    --body-padding: 1rem;
-  }
+  font-size: clamp(var(--font-36), 6.5vw, var(--font-56));
+  text-transform: uppercase;
 }

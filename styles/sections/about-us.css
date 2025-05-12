@@ -1,23 +1,32 @@
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-block-end: var(--gap-8);
+}
+
 .feedback__list {
+  min-inline-size: max-content;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 450px));
+  grid-template-columns: repeat(auto-fit, 1fr);
   column-gap: var(--gap-32);
 }
 
 .feedback__item {
+  inline-size: clamp(320px, 80vw, 450px);
   display: grid;
   grid-template-rows: max-content 1fr min-content;
   padding: var(--gap-32);
   border: 1px solid var(--grey-200);
   border-radius: var(--radius-20);
+  scroll-snap-align: start;
 
   & :where(article, blockquote) {
     display: contents;
   }
 
   & h3 {
-    font-size: var(--font-32);
+    font-size: clamp(var(--font-24), 3.8vw, var(--font-32));
     padding-block-end: var(--gap-24);
   }
   & footer {
@@ -27,7 +36,7 @@
     & cite {
       display: inline-block;
       position: relative;
-      font-size: var(--font-22);
+      font-size: clamp(var(--font-18), 2.8vw, var(--font-22));
       font-style: normal;
       font-family: FunnelDisplay-Light, sans-serif;
       text-indent: 1.75rem;
