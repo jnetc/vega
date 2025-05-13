@@ -1,0 +1,33 @@
+#about-vega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: var(--gap-96);
+
+  & :where(h2, p) {
+    grid-column: 2;
+  }
+
+  & figure {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    place-self: center;
+
+    img {
+      inline-size: 100%;
+      block-size: 100%;
+    }
+  }
+
+  @media (width <= 60rem) {
+    grid-template-columns: 1fr;
+
+    & :where(h2, p) {
+      grid-column: 1;
+    }
+
+    & figure {
+      display: none;
+    }
+  }
+}

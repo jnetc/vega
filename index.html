@@ -42,9 +42,13 @@
 	<link rel="stylesheet" href="./styles/global.css">
 	<!-- Main styles -->
 	<link rel="stylesheet" href="./styles/variable.css" />
+	<link rel="stylesheet" href="./styles/common.css" />
 	<link rel="stylesheet" href="./styles/sections/hero.css" />
-	<link rel="stylesheet" href="./styles/sections/team.css" />
-	<link rel="stylesheet" href="./styles/sections/about-us.css" />
+	<link rel="stylesheet" href="./styles/sections/partnership.css" />
+	<link rel="stylesheet" href="./styles/sections/products.css" />
+	<link rel="stylesheet" href="./styles/sections/about-vegabi.css" />
+	<link rel="stylesheet" href="./styles/sections/our-team.css" />
+	<link rel="stylesheet" href="./styles/sections/testimonials.css" />
 	<!-- Google tag (gtag.js) -->
 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JYKZFDLRK"></script>
   <script>
@@ -128,51 +132,81 @@
 					<use href="../public/svg/icons/ui_main_set.svg#arrow-right"></use>
 				</svg>
 			</a>
-			<div class="official-partners" aria-labelledby="partners-title">
-				<span>Trusted by leaders like Meta and Microsoft</span>
-				<img src="./public/svg/logos/meta_com.svg" width="92" height="19" alt="Meta official partner" />
-				<img src="./public/svg/logos/microsoft_com.svg" width="115" height="19" alt="Microsoft official partner" />
-				<span style="display: none;">
-					Encrypted with
-					<a href="https://letsencrypt.org/" class="link link-blue" target="_blank" rel="noopener noreferrer">
-						Blockchain Technology
-					</a>
-				</span>
-			</div>
 		</section>
-		<section id="overview" data-section="overview">
-			<h2 class="section__title">Is it real? <span class="p-color">Yes, it is!</span></h2>
-			<p class="section__description">
-				Like many in the construction industry, you probably use <b class="wa-color">WhatsApp</b> daily. It’s
-				convenient, but it wasn’t built with industry needs in mind. That's where Eiffels AI comes in—transforming your
-				favorite messaging app into a powerful tool that simplifies tasks and boosts productivity through AI. From
-				generating daily reports to securing approvals, all within the chat interface you already know and love, Eiffels
-				AI is set to revolutionize how you work.
+		<section class="partnership" data-section="partnership">
+			<h3>Trusted by leaders like Meta and Microsoft</h3>
+			<img src="./public/svg/logos/meta_com.svg" width="92" height="19" alt="Meta official partner" />
+			<img src="./public/svg/logos/microsoft_com.svg" width="115" height="19" alt="Microsoft official partner" />
+			<p>
+				Encrypted with
+				<a href="https://letsencrypt.org/" class="link link-blue" target="_blank" rel="noopener noreferrer">
+					Blockchain Technology
+				</a>
 			</p>
 		</section>
-		<section id="partners" data-section="partners">
-			<h2 class="partners__title">StartUp Partners</h2>
-			<div class="partners__logos">
-				<a href="https://slush.org/" target="_blank" rel="noopener noreferrer" aria-label="Slush Startup partner">
-					<img src="./public/svg/logos/node_by_slush.svg" width="164" height="64" alt="node by slush logo">
+		<section id="products" data-section="products">
+			<h2 class="section__title">/ VEGA <span>BI PRODUCTS</span></h2>
+			<p class="section__description">
+				AI-native tools built for the field. Eiffels AI and S.Market work where your teams do — in WhatsApp and the web.
+				Designed to simplify, not replace.
+			</p>
+
+			<article class="product odd">
+				<a href="https://www.eiffels.ai/" class="product__img" target="_blank" rel="noopener noreferrer">
+					<img src="./public/imgs/eiffels_ai.jpg" width="512" height="512" alt="Eiffels AI Product Image">
 				</a>
-				<a href="https://www.microsoft.com/en-us/startups/" target="_blank" rel="noopener noreferrer"
-					aria-label="Microsoft Startup partner">
-					<img src="./public/svg/logos/founders_hub.svg" width="164" height="64" alt="founders hub logo">
+				<div class="product__info">
+					<h3>/ Eiffels.<span>ai</span></h3>
+					<p>AI copilots for reporting, safety, and team communication — all inside WhatsApp.
+						<br /><br />
+
+						Vega BI’s flagship assistant for construction sites. Eiffels AI helps workers report daily tasks, flag
+						safety
+						issues,
+						and sync with managers in real time — using only WhatsApp. No training, no apps — just smart automation in a
+						familiar
+						interface.
+						Ideal for field-heavy teams that need to keep operations smooth and documented — invisibly powered by LLM.
+					</p>
+					<a href="https://www.eiffels.ai/" class="product__btn" target="_blank" rel="noopener noreferrer">
+						Browse Eiffels AI
+						<div>
+							<svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M19.125 11.6887C19.125 11.4627 19.0271 11.2367 18.8538 11.0709L13.8817 6.10637C13.7009 5.9331 13.505 5.85024 13.2866 5.85024C12.8119 5.85024 12.4654 6.18924 12.4654 6.64879C12.4654 6.88986 12.5558 7.09326 12.714 7.24393L14.409 8.96156L16.5938 10.9579L14.8384 10.8525L5.70787 10.8525C5.21066 10.8525 4.86412 11.199 4.86412 11.6887C4.86412 12.1859 5.21066 12.5324 5.70787 12.5324L14.8384 12.5324L16.5862 12.427L14.409 14.4233L12.714 16.141C12.5558 16.2916 12.4654 16.495 12.4654 16.7361C12.4654 17.1957 12.8119 17.5347 13.2866 17.5347C13.505 17.5347 13.7084 17.4518 13.9043 17.2635L18.8538 12.314C19.0271 12.1482 19.125 11.9222 19.125 11.6887Z"
+									fill="white" />
+							</svg>
+						</div>
+					</a>
+				</div>
+			</article>
+			<article class="product even">
+				<a href="https://www.s.market/" class="product__img" target="_blank" rel="noopener noreferrer">
+					<img src="./public/imgs/s_market.jpg" width="512" height="512" alt="S Market Product Image">
 				</a>
-				<a href="https://kirahub.org/" target="_blank" rel="noopener noreferrer" aria-label="KiraHub Startup partner">
-					<img src="./public/svg/logos/kirahub.png" width="164" height="64" alt="kirahub logo">
-				</a>
-				<a href="https://www.businessfinland.fi/en/for-finnish-customers/home" target="_blank" rel="noopener noreferrer"
-					aria-label="Business Finland partner">
-					<img src="./public/svg/logos/business_fi.svg" width="164" height="64" alt="business finland logo">
-				</a>
-				<a href="https://maria.io/" target="_blank" rel="noopener noreferrer" aria-label="Maria Startup partner">
-					<img src="./public/svg/logos/maria_01.svg" width="164" height="64" alt="Maria 01, Startup Campus logo">
-				</a>
-			</div>
+				<div class="product__info">
+					<h3>/ S.<span>market</span></h3>
+					<p>is your AI-powered procurement and inventory marketplace — designed for fast field operations.
+						<br /><br />
+						Browse materials, search by category, and view suppliers via the S.Market web platform.
+						<br /><br />
+						To place and manage orders, workers are seamlessly redirected to WhatsApp — where everything is tracked and
+						structured by Vega's LLM engine.
+					</p>
+					<a href="https://www.s.market/" class="product__btn" target="_blank" rel="noopener noreferrer">
+						Browse S Market
+						<div>
+							<svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M19.125 11.6887C19.125 11.4627 19.0271 11.2367 18.8538 11.0709L13.8817 6.10637C13.7009 5.9331 13.505 5.85024 13.2866 5.85024C12.8119 5.85024 12.4654 6.18924 12.4654 6.64879C12.4654 6.88986 12.5558 7.09326 12.714 7.24393L14.409 8.96156L16.5938 10.9579L14.8384 10.8525L5.70787 10.8525C5.21066 10.8525 4.86412 11.199 4.86412 11.6887C4.86412 12.1859 5.21066 12.5324 5.70787 12.5324L14.8384 12.5324L16.5862 12.427L14.409 14.4233L12.714 16.141C12.5558 16.2916 12.4654 16.495 12.4654 16.7361C12.4654 17.1957 12.8119 17.5347 13.2866 17.5347C13.505 17.5347 13.7084 17.4518 13.9043 17.2635L18.8538 12.314C19.0271 12.1482 19.125 11.9222 19.125 11.6887Z"
+									fill="white" />
+							</svg>
+						</div>
+					</a>
+				</div>
+			</article>
 		</section>
-		<section id="features" data-section="features">
+		<section id="features" data-section="features" style="display: none;">
 			<h2 class="section__title">Features that Increase Efficiency <span class="p-color">Timely</span> Workflow</h2>
 			<p class="section__description">
 				Eiffels AI transcends traditional apps with its swift, no-install integration directly into WhatsApp,
@@ -280,6 +314,33 @@
 			</article>
 		</section>
 
+		<section id="about-vega" data-section="about-vega">
+			<h2 class="section__title">/ <span>ABOUT</span> VEGA <span>BI</span></h2>
+			<p class="section__description">
+				Vega is a digital innovation company focused on transforming how businesses interact with their data.
+				We build real-time SaaS solutions that help companies track performance, manage operations, and make smarter
+				decisions — all through intuitive web interfaces and seamless mobile communication.
+				</br></br>
+				Our platform integrates web dashboards, WhatsApp automation, and advanced analytics into a single ecosystem
+				designed for everyday business use. Unlike traditional tools, Vega offers a user-first experience — no
+				complex
+				integrations, no technical barriers — just clear insights, instant reporting, and real-world flexibility.
+				</br></br>
+				We believe that data should empower, not overwhelm. That's why we design systems that adapt to the business
+				—
+				not the other way around. Our mission is simple: help companies grow by making information actionable,
+				processes
+				faster, and communication
+				smarter.
+				</br></br>
+				At Vega, we're building the future of business intelligence — connected, accessible, and built for real
+				people.
+			</p>
+			<figure class="section__image">
+				<img src="./public/imgs/about_vegabi.png" width="480" height="640" alt="About Vega Software Oy" />
+			</figure>
+		</section>
+
 		<section id="team" data-section="team">
 			<h2 class="section__title">/ <span>our</span> team</h2>
 			<div class="carousel">
@@ -291,6 +352,8 @@
 							<figcaption>
 								<h3>Igor Ivanov <br><span>CEO</span></h3>
 								<p>Director of marketing and growth strategy. Brand developer. Academic business background.</p>
+								<a href="https://www.linkedin.com/" class="link link-blue" target="_blank"
+									rel="noopener noreferrer">LinkedIn</a>
 							</figcaption>
 						</figure>
 					</li>
@@ -302,17 +365,21 @@
 								<h3>Violetta Suokas <br><span>Product Manager</span></h3>
 								<p>Product management leader. Growth-driven strategist. Strong background in technology and business
 									innovation.</p>
+								<a href="https://www.linkedin.com/" class="link link-blue" target="_blank"
+									rel="noopener noreferrer">LinkedIn</a>
 							</figcaption>
 						</figure>
 					</li>
 					<li class="team__member">
 						<figure>
 							<img src="./public/imgs/anton_kappi.jpg" width="470" height="575"
-								alt="Anton Kappi (Vega Software Oy UI Arhitector)">
+								alt="Anton Kappi (Vega Software Oy UI/UX Architect)">
 							<figcaption>
-								<h3>Anton Kappi <br><span>UI Arhitector</span></h3>
-								<p>UI architect. Systematic design thinker. Expertise in scalable and user-centric digital solutions.
+								<h3>Anton Kappi <br><span>UI/UX Architect</span></h3>
+								<p>Experience-driven design strategist. Expert in building intuitive and scalable digital ecosystems.
 								</p>
+								<a href="https://www.linkedin.com/" class="link link-blue" target="_blank"
+									rel="noopener noreferrer">LinkedIn</a>
 							</figcaption>
 						</figure>
 					</li>
@@ -321,7 +388,7 @@
 							<img src="./public/imgs/igor_ivanov.jpg" width="470" height="575"
 								alt="Igor Ivanov (Vega Software Oy CEO)">
 							<figcaption>
-								<h3>Igor Ivanov (CEO)</h3>
+								<h3>Igor Ivanov <br><span>CEO</span></h3>
 								<p>Director of marketing and growth strategy. Brand developer. Academic business background.</p>
 							</figcaption>
 						</figure>

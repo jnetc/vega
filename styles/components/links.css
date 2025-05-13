@@ -16,7 +16,7 @@
 
 .link-blue {
   color: var(--link-color);
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: underline var(--link-color);
 }
 .link-blue:hover {

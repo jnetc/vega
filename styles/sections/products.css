@@ -1,0 +1,114 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 500px);
+  column-gap: var(--gap-32);
+
+  & .product__img {
+    & img {
+      inline-size: 100%;
+      max-block-size: 100%;
+      min-block-size: 100%;
+      border-radius: var(--radius-20);
+      object-fit: cover;
+    }
+  }
+
+  &.odd {
+    grid-template-columns: 1fr minmax(320px, 500px);
+  }
+
+  &.even {
+    grid-template-columns: minmax(320px, 500px) 1fr;
+
+    & .product__img {
+      order: 2;
+    }
+    & .product__info {
+      order: 1;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-block-end: var(--gap-48);
+  }
+
+  @media screen and (width <= 70rem) {
+    &.odd {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 1fr;
+    }
+
+    &.even {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content 1fr;
+
+      & .product__img {
+        order: 1;
+      }
+
+      & .product__info {
+        order: 2;
+      }
+    }
+  }
+}
+
+.product__info {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: var(--gap-28);
+  padding: var(--gap-32);
+  border: 1px solid var(--grey-100);
+  border-radius: var(--radius-20);
+  transition: border-color 0.3s ease-in-out;
+
+  & h3 {
+    font-size: clamp(var(--font-28), 5vw, var(--font-48));
+  }
+
+  & p {
+    font-size: clamp(var(--font-18), 2.2vw, var(--font-22));
+  }
+
+  & .product__btn {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-16);
+    margin-inline-start: auto;
+    color: var(--black);
+    text-decoration: none;
+
+    & div {
+      inline-size: 4rem;
+      aspect-ratio: 1;
+      display: grid;
+      place-content: center;
+      border-radius: 50vw;
+      background-color: var(--primary);
+    }
+
+    & .icon {
+      inline-size: 2rem;
+    }
+
+    &:hover .icon {
+      animation: move-in 0.3s ease-in-out forwards;
+    }
+  }
+}
+
+.product:hover .product__info {
+  border-color: var(--grey-300);
+}
+
+@keyframes move-in {
+  50% {
+    transform: translateX(3rem);
+  }
+  50.001% {
+    transform: translateX(-3rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
